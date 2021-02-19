@@ -1,0 +1,14 @@
+
+Use 'git clone 'URL'' To get the respository
+
+Use 'git init' to establish a respository
+
+Use 'git add .' to add what you want to the respository
+
+'git status' to see what you are planning to push
+
+'git commit -m 'Message'' To prepare a push with a given Message
+
+'git remote add origin 'URL'' To Add the url for where you are pushing
+
+'git push -u orgin main' Used to push content to git hub
