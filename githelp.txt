@@ -1,14 +1,21 @@
-
+USE THESE IN ORDER TO EDIT IT CORRECTLY
 Use 'git clone 'URL'' To get the respository
 
-Use 'git init' to establish a respository
+Move into the new folder
 
-Use 'git add .' to add what you want to the respository
+Make changes in that folder
+
+Use 'git add .' to add material in current folder to the new respository
 
 'git status' to see what you are planning to push
 
 'git commit -m 'Message'' To prepare a push with a given Message
 
+'git push' To push the new content
+
+
+
+Unknown reason?? Don't use
 'git remote add origin 'URL'' To Add the url for where you are pushing
 
 'git push -u orgin main' Used to push content to git hub
