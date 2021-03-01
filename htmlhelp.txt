@@ -3,8 +3,7 @@ Start with <!DOCTYPE html>    --- Sets to most recent html
 
 key:
     <>=</>   --- Between the two brackets, you can put content.
-    # --- Stands for a number
-
+    <!-- = -->  --- How to comment in html
 
 <html> = </html>      --- This is where the body of the website will be contained.
     lang=""               --- Used to specify the language of the webpage
@@ -18,7 +17,7 @@ key:
     <script> = </script>  --- Used for any java script that is used in the program.
 
 <body> = </body>      --- This is where the content of the website lies.
-    <h#> = </h#>      --- Used for headers. Bolded by default.
+    <h1> = </h6>      --- Used for headers. Bolded by default.
         style=""        --- Can be used in <h>, <p> and more, but probably should be in .css file
             property:value          --- Common Properties 
                                         - color             -- The color of it
@@ -30,15 +29,49 @@ key:
         title=""        --- Used to give more info about a tag/element
     <br>              --- Used for line breaks.
     <hr>              --- Similar to br, but it adds a horizontal line.
-    <a> = </a>        --- Used for moving to a different .html file.
-        href=""         --- Used for where you are trying to move to.
-    <img>             --- Used for images.
+    <a> = </a>        --- Used for moving to a different .html file. A hyperlink. You can used images instead of text if wanted.
+        href=""         --- Used for where you are trying to move to. Can add "mailto:" followed by anb
+            "#C4"       --- It will take you whatever has the id of C4.
+        target=""       --- Used if you want to open the hyperlink in:
+                                -- _self : The same tab it was clicked.
+                                -- _blank : In a new tab.
+                                -- _parent : Open in parent frame.
+                                -- _top : Open in the full body of the window.
+        title=""        --- If mouse if hovered over, it will show this text.
+    <img>             --- Used for images. Can be used in <a>
         src=""          --- The source of images.
         alt=""          --- Alternate text displayed if image cannot be found.
         width=""        --- Used for the width of the image, can be in pixels(px) or in percent(%).
         height=""       --- Used for the height of the image, can be in pixels(px) or in percent(%).
+        usemap="#"      --- You can take specific areas on a picture and do something with them. See <map>
+    <map> = </map>    --- Map out a picture.
+        shape=""        --- Shape the area should posses. Use default for the entire thing.
+        coords=""       --- The cordinates of where the part you are focusing on is.
+        href=""         --- An href can be used here. Used for where you are trying to move to. Can add "mailto:" followed by anb
+        onclick=""      --- What happens or where it goes when the button is clicked.
     <pre> = </pre>    --- Any spaces and new lines are preserved within the tag. Pre-formatted text.
-
+    <b> = </b>        --- Bolds a text
+    <strong> = </strong>  --- Important text
+    <i> = </i>        --- Italics
+    <em> = </em>      --- Emphasize text
+    <mark> = </mark>  --- Mark text, highlighted
+    <small> = </small> --- Makes text smaller
+    <del> = </del>    --- Deleted text
+    <ins> = </ins>    --- Inserted text
+    <sub> = </sub>    --- Subscript
+    <sup> = </sup>    --- Superscript
+    <blockquote> = </blockquote>  --- Used to quote lots of text.
+        cite=""        --- Like href but for where you got it, and for a quote.
+    <q> = </q>        --- Used to quote a small amount of text.
+    <abbr> = </abbr>   --- Used for abbreviations or acronyms.
+        abbr title =""    --- What the abbreviation or acronym stands for.
+    <address> = </address>  --- Used for how to contact the author/owner of a document or article.
+    <cite> = </cite>    --- Defines title of creative work, like a poem
+    <bdo> = </bdo>      --- Used to reverse text. From left to right, to right to left.
+        dir="(rtl)"     --- ??
+    <button> = </button>  --- A button that can go somewhere or do something. Need javascript to handle the events.
+        onclick=""       --- What happens or where it goes when the button is clicked.
+    
 
 Left off at:
-https://www.w3schools.com/html/html_formatting.asp
+https://www.w3schools.com/html/html_images_background.asp
