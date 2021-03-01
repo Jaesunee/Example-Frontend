@@ -1,0 +1,9 @@
+html
+https://www.w3schools.com/html
+
+Used for css
+https://www.w3schools.com/css
+
+
+Used for heads
+https://htmlhead.dev/#elements

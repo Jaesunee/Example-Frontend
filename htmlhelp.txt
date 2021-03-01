@@ -1,0 +1,44 @@
+Start with <!DOCTYPE html>    --- Sets to most recent html
+
+
+key:
+    <>=</>   --- Between the two brackets, you can put content.
+    # --- Stands for a number
+
+
+<html> = </html>      --- This is where the body of the website will be contained.
+    lang=""               --- Used to specify the language of the webpage
+
+<head> = </head>      --- Used for html info and initialization of things.
+    <title> = </title>   --- This is what appears at the top of the tab. Like a name.
+    <link>              --- Links to a .css file.
+        rel=""          --- ?
+        href=""         --- Links to the .css file
+    <style> = </style>  --- This is what would be in your .css file.
+    <script> = </script>  --- Used for any java script that is used in the program.
+
+<body> = </body>      --- This is where the content of the website lies.
+    <h#> = </h#>      --- Used for headers. Bolded by default.
+        style=""        --- Can be used in <h>, <p> and more, but probably should be in .css file
+            property:value          --- Common Properties 
+                                        - color             -- The color of it
+                                        - background-color  -- The color of the background
+                                        - font-family       -- The font
+                                        - font-size         -- Font size
+                                        - text-align        --  Where the text is placed
+    <p> = </p>        --- Used for paragraphs. Number is not needed.
+        title=""        --- Used to give more info about a tag/element
+    <br>              --- Used for line breaks.
+    <hr>              --- Similar to br, but it adds a horizontal line.
+    <a> = </a>        --- Used for moving to a different .html file.
+        href=""         --- Used for where you are trying to move to.
+    <img>             --- Used for images.
+        src=""          --- The source of images.
+        alt=""          --- Alternate text displayed if image cannot be found.
+        width=""        --- Used for the width of the image, can be in pixels(px) or in percent(%).
+        height=""       --- Used for the height of the image, can be in pixels(px) or in percent(%).
+    <pre> = </pre>    --- Any spaces and new lines are preserved within the tag. Pre-formatted text.
+
+
+Left off at:
+https://www.w3schools.com/html/html_formatting.asp

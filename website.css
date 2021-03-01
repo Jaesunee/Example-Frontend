@@ -1,0 +1,29 @@
+h1 {
+    color:blue;
+    
+}
+
+#logo {
+    border-radius: 50%;
+    border: 5px solid #3067ab;
+    float: left;
+}
+
+nav{
+    float:right;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    background: #42bcf5; 
+}
+
+header::after{
+    content: ' ';
+    display:table;
+    clear: both;
+}
