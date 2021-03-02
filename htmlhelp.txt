@@ -71,7 +71,43 @@ key:
         dir="(rtl)"     --- ??
     <button> = </button>  --- A button that can go somewhere or do something. Need javascript to handle the events.
         onclick=""       --- What happens or where it goes when the button is clicked.
-    
+    <picture> = </picture>  --- similar to <img>, but it is used for choosing an image given a set of conditions.
+        <source>
+            media=""        --- The conditions.
+            srcset=""       --- The image given that will be displayed given 'media=""'
+    <table> = </table>      --- Creates a table in the website.
+        <caption> = </caption>      --- Must be placed right after <table>. Adds a caption to a table.
+        <tr> = </tr>        --- Signifies a row in the table.
+        <th> = </th>        --- A table headers.
+            colspan=""      --- How many columns a header takes.
+            rowspan=""      --- How many rows a header takes.
+        <td> = </td>        --- The data that goes into a cell in the table.
+    <ul> = </ul>            --- An unordered list, uses bullets.
+        <li> = </li>        --- A list item.
+    <ol> = </ol>            --- An ordered list, uses numbers.
+        type=""             --- What type of ordered list it is.
+            1               --- Numbers.
+            A               --- Uppercase letters.
+            a               --- Lowercase letters.
+            I               --- Uppercase roman numerals.
+            i               --- Lowercase roman numerals.
+        start=""            --- The number that the list will start at.
+        <li> = </li>        --- A list item.
+    <dl> = </dl>            --- A Description list.
+        <dt> = </dt>        --- Term you want to describe.
+        <dd> = </dd>        --- The description of <dt>.
+    <div> = </div>          --- A container for other HTML elements. style, class, and id are commonly found in <div>, but not required.
+        <span> = </span>    --- Used to mark up a part of a text. Used in line.
+    class=""                --- Used to point to a class name in a style sheet. All elements with the same class name will be styled the same. To do multiple classes, seperate them with a space. It will follow both styles from their respective classes. Can be used on multiple different <> cases.
+    id=""                   --- Specifies a unique id. Must be unique.
+    <iframe> = </iframe>    --- Used to display a web page in a web page. Has border by default.
+        src=""              --- The url you are displaying.
+        title=""            --- It just lets screen readers to read it outloud.
+        target=""           --- ???
+    <script> = </script>    --- JavaScript that is written in line. Can be outsourced to a different file via src. See JavaScriptHelp.txt (not yet put in).
+        src=""              --- The source of the script, if you have it written somewhere else.
+    <noscript> = </noscript>  --- Alternate contect that is displayed if scripts are disabled or are not supported.
+
 
 Left off at:
-https://www.w3schools.com/html/html_images_background.asp
+https://www.w3schools.com/html/html_filepaths.asp
