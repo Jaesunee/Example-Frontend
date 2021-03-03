@@ -2,112 +2,162 @@ Start with <!DOCTYPE html>    --- Sets to most recent html
 
 
 key:
-    <>=</>   --- Between the two brackets, you can put content.
-    <!-- = -->  --- How to comment in html
+    <>=</>          --- Between the two brackets, you can put content.
+    <!-- = -->      --- How to comment in html
+    <>=</>
+        stuff       --- Stuff indicates that you can put it in the <> or it can be put between the two <>.
 
-<html> = </html>      --- This is where the body of the website will be contained.
-    lang=""               --- Used to specify the language of the webpage
 
-<head> = </head>      --- Used for html info and initialization of things.
-    <title> = </title>   --- This is what appears at the top of the tab. Like a name.
-    <link>              --- Links to a .css file.
-        rel=""          --- ?
-        href=""         --- Links to the .css file
-    <style> = </style>  --- This is what would be in your .css file.
-    <script> = </script>  --- Used for any java script that is used in the program.
 
-<body> = </body>      --- This is where the content of the website lies.
-    <h1> = </h6>      --- Used for headers. Bolded by default.
-        style=""        --- Can be used in <h>, <p> and more, but probably should be in .css file
+
+
+
+
+
+<html> = </html>            --- This is where the body of the website will be contained.
+    lang=""                 --- Used to specify the language of the webpage
+
+
+
+
+Head is content that is processed before the website is loaded. This incldues things like scripts, metadata, and styles.
+<head> = </head>            --- Used for html info and initialization of things.
+    <title> = </title>      --- This is what appears at the top of the tab. Like a name.
+    <link>                  --- Links to a .css file.
+        rel=""              --- Used to define the relationship between current document and an external resource.
+        href=""             --- Links to the .css file
+    <style> = </style>      --- This is what would be in your .css file.
+    <script> = </script>    --- Used for any java script that is used in the program.
+    <meta> = </meta>        --- Used to specify character set, page description, keywords, author, and viewport settings. MetaData. Not shown on the website, but are used by browsers.
+        charset="UTF-8"     --- The character set used.
+        name=""             --- keywords: keywords for search engines. description: Description about webpage. author: Who made it. viewport: make it look good on all devices.
+        content=""          --- The content you are putting given the name="".
+    <base>                  --- Specifies a base URL for all relative URLS in a page. It must have an href="" or a target attribute, or both. Only one per document.
+
+
+
+
+
+Body is the visual part of the website.
+<body> = </body>                    --- This is where the content of the website lies.
+    <h1> = </h6>                    --- Used for headers. Bolded by default.
+        style=""                    --- Can be used in <h>, <p> and more, but probably should be in .css file
             property:value          --- Common Properties 
                                         - color             -- The color of it
                                         - background-color  -- The color of the background
                                         - font-family       -- The font
                                         - font-size         -- Font size
                                         - text-align        --  Where the text is placed
-    <p> = </p>        --- Used for paragraphs. Number is not needed.
-        title=""        --- Used to give more info about a tag/element
-    <br>              --- Used for line breaks.
-    <hr>              --- Similar to br, but it adds a horizontal line.
-    <a> = </a>        --- Used for moving to a different .html file. A hyperlink. You can used images instead of text if wanted.
-        href=""         --- Used for where you are trying to move to. Can add "mailto:" followed by anb
-            "#C4"       --- It will take you whatever has the id of C4.
-        target=""       --- Used if you want to open the hyperlink in:
-                                -- _self : The same tab it was clicked.
-                                -- _blank : In a new tab.
-                                -- _parent : Open in parent frame.
-                                -- _top : Open in the full body of the window.
-        title=""        --- If mouse if hovered over, it will show this text.
-    <img>             --- Used for images. Can be used in <a>
-        src=""          --- The source of images.
-        alt=""          --- Alternate text displayed if image cannot be found.
-        width=""        --- Used for the width of the image, can be in pixels(px) or in percent(%).
-        height=""       --- Used for the height of the image, can be in pixels(px) or in percent(%).
-        usemap="#"      --- You can take specific areas on a picture and do something with them. See <map>
-    <map> = </map>    --- Map out a picture.
-        shape=""        --- Shape the area should posses. Use default for the entire thing.
-        coords=""       --- The cordinates of where the part you are focusing on is.
-        href=""         --- An href can be used here. Used for where you are trying to move to. Can add "mailto:" followed by anb
-        onclick=""      --- What happens or where it goes when the button is clicked.
-    <pre> = </pre>    --- Any spaces and new lines are preserved within the tag. Pre-formatted text.
-    <b> = </b>        --- Bolds a text
-    <strong> = </strong>  --- Important text
-    <i> = </i>        --- Italics
-    <em> = </em>      --- Emphasize text
-    <mark> = </mark>  --- Mark text, highlighted
-    <small> = </small> --- Makes text smaller
-    <del> = </del>    --- Deleted text
-    <ins> = </ins>    --- Inserted text
-    <sub> = </sub>    --- Subscript
-    <sup> = </sup>    --- Superscript
-    <blockquote> = </blockquote>  --- Used to quote lots of text.
-        cite=""        --- Like href but for where you got it, and for a quote.
-    <q> = </q>        --- Used to quote a small amount of text.
-    <abbr> = </abbr>   --- Used for abbreviations or acronyms.
-        abbr title =""    --- What the abbreviation or acronym stands for.
-    <address> = </address>  --- Used for how to contact the author/owner of a document or article.
-    <cite> = </cite>    --- Defines title of creative work, like a poem
-    <bdo> = </bdo>      --- Used to reverse text. From left to right, to right to left.
-        dir="(rtl)"     --- ??
-    <button> = </button>  --- A button that can go somewhere or do something. Need javascript to handle the events.
-        onclick=""       --- What happens or where it goes when the button is clicked.
-    <picture> = </picture>  --- similar to <img>, but it is used for choosing an image given a set of conditions.
+    <p> = </p>                      --- Used for paragraphs. Number is not needed.
+        title=""                    --- Used to give more info about a tag/element
+    <br>                            --- Used for line breaks.
+    <hr>                            --- Similar to br, but it adds a horizontal line.
+    <a> = </a>                      --- Used for moving to a different .html file. A hyperlink. You can used images instead of text if wanted.
+        href=""                     --- Used for where you are trying to move to. Can add "mailto:" followed by anb
+            "#C4"                   --- It will take you whatever has the id of C4. C4 is just an example.
+        target=""                   --- Used if you want to open the hyperlink in:
+                                        -- _self : The same tab it was clicked.
+                                        -- _blank : In a new tab.
+                                        -- _parent : Open in parent frame.
+                                        -- _top : Open in the full body of the window.
+        title=""                    --- If mouse if hovered over, it will show this text.
+    <img>                           --- Used for images. Can be used in <a>
+        src=""                      --- The source of images.
+        alt=""                      --- Alternate text displayed if image cannot be found.
+        width=""                    --- Used for the width of the image, can be in pixels(px) or in percent(%).
+        height=""                   --- Used for the height of the image, can be in pixels(px) or in percent(%).
+        usemap="#"                  --- You can take specific areas on a picture and do something with them. See <map>
+    <map> = </map>                  --- Map out a picture.
+        shape=""                    --- Shape the area should posses. Use default for the entire thing.
+        coords=""                   --- The cordinates of where the part you are focusing on is.
+        href=""                     --- An href can be used here. Used for where you are trying to move to. Can add "mailto:" followed by anb
+        onclick=""                  --- What happens or where it goes when the button is clicked.
+    <pre> = </pre>                  --- Any spaces and new lines are preserved within the tag. Pre-formatted text.
+    <b> = </b>                      --- Bolds a text
+    <strong> = </strong>            --- Important text
+    <i> = </i>                      --- Italics
+    <em> = </em>                    --- Emphasize text
+    <mark> = </mark>                --- Mark text, highlighted
+    <small> = </small>              --- Makes text smaller
+    <del> = </del>                  --- Deleted text
+    <ins> = </ins>                  --- Inserted text
+    <sub> = </sub>                  --- Subscript
+    <sup> = </sup>                  --- Superscript
+    <blockquote> = </blockquote>    --- Used to quote lots of text.
+        cite=""                     --- Like href but for where you got it, and for a quote.
+    <q> = </q>                      --- Used to quote a small amount of text.
+    <abbr> = </abbr>                --- Used for abbreviations or acronyms.
+        abbr title =""              --- What the abbreviation or acronym stands for.
+    <address> = </address>          --- Used for how to contact the author/owner of a document or article.
+    <cite> = </cite>                --- Defines title of creative work, like a poem
+    <bdo> = </bdo>                  --- Used to reverse text. From left to right, to right to left.
+        dir="(rtl)"                 --- ??
+    <button> = </button>            --- A button that can go somewhere or do something. Need javascript to handle the events.
+        onclick=""                  --- What happens or where it goes when the button is clicked.
+    <picture> = </picture>          --- similar to <img>, but it is used for choosing an image given a set of conditions.
         <source>
-            media=""        --- The conditions.
-            srcset=""       --- The image given that will be displayed given 'media=""'
-    <table> = </table>      --- Creates a table in the website.
+            media=""                --- The conditions.
+            srcset=""               --- The image given that will be displayed given 'media=""'
+    <table> = </table>              --- Creates a table in the website.
         <caption> = </caption>      --- Must be placed right after <table>. Adds a caption to a table.
-        <tr> = </tr>        --- Signifies a row in the table.
-        <th> = </th>        --- A table headers.
-            colspan=""      --- How many columns a header takes.
-            rowspan=""      --- How many rows a header takes.
-        <td> = </td>        --- The data that goes into a cell in the table.
-    <ul> = </ul>            --- An unordered list, uses bullets.
-        <li> = </li>        --- A list item.
-    <ol> = </ol>            --- An ordered list, uses numbers.
-        type=""             --- What type of ordered list it is.
-            1               --- Numbers.
-            A               --- Uppercase letters.
-            a               --- Lowercase letters.
-            I               --- Uppercase roman numerals.
-            i               --- Lowercase roman numerals.
-        start=""            --- The number that the list will start at.
-        <li> = </li>        --- A list item.
-    <dl> = </dl>            --- A Description list.
-        <dt> = </dt>        --- Term you want to describe.
-        <dd> = </dd>        --- The description of <dt>.
-    <div> = </div>          --- A container for other HTML elements. style, class, and id are commonly found in <div>, but not required.
-        <span> = </span>    --- Used to mark up a part of a text. Used in line.
-    class=""                --- Used to point to a class name in a style sheet. All elements with the same class name will be styled the same. To do multiple classes, seperate them with a space. It will follow both styles from their respective classes. Can be used on multiple different <> cases.
-    id=""                   --- Specifies a unique id. Must be unique.
-    <iframe> = </iframe>    --- Used to display a web page in a web page. Has border by default.
-        src=""              --- The url you are displaying.
-        title=""            --- It just lets screen readers to read it outloud.
-        target=""           --- ???
-    <script> = </script>    --- JavaScript that is written in line. Can be outsourced to a different file via src. See JavaScriptHelp.txt (not yet put in).
-        src=""              --- The source of the script, if you have it written somewhere else.
-    <noscript> = </noscript>  --- Alternate contect that is displayed if scripts are disabled or are not supported.
+        <tr> = </tr>                --- Signifies a row in the table.
+        <th> = </th>                --- A table headers.
+            colspan=""              --- How many columns a header takes.
+            rowspan=""              --- How many rows a header takes.
+        <td> = </td>                --- The data that goes into a cell in the table.
+    <ul> = </ul>                    --- An unordered list, uses bullets.
+        <li> = </li>                --- A list item.
+    <ol> = </ol>                    --- An ordered list, uses numbers.
+        type=""                     --- What type of ordered list it is.
+            1                       --- Numbers.
+            A                       --- Uppercase letters.
+            a                       --- Lowercase letters.
+            I                       --- Uppercase roman numerals.
+            i                       --- Lowercase roman numerals.
+        start=""                    --- The number that the list will start at.
+        <li> = </li>                --- A list item.
+    <dl> = </dl>                    --- A Description list.
+        <dt> = </dt>                --- Term you want to describe.
+        <dd> = </dd>                --- The description of <dt>.
+    <div> = </div>                  --- A container for other HTML elements. style, class, and id are commonly found in <div>, but not required.
+        <span> = </span>            --- Used to mark up a part of a text. Used in line.
+    class=""                        --- Used to point to a class name in a style sheet. All elements with the same class name will be styled the same. To do multiple classes, seperate them with a space. It will follow both styles from their respective classes. Can be used on multiple different <> cases.
+    id=""                           --- Specifies a unique id. Must be unique.
+    <iframe> = </iframe>            --- Used to display a web page in a web page. Has border by default.
+        src=""                      --- The url you are displaying.
+        title=""                    --- It just lets screen readers to read it outloud.
+        target=""                   --- ???
+    <script> = </script>            --- JavaScript that is written in line. Can be outsourced to a different file via src. See JavaScriptHelp.txt (not yet put in).
+        src=""                      --- The source of the script, if you have it written somewhere else.
+    <noscript> = </noscript>        --- Alternate contect that is displayed if scripts are disabled or are not supported.
+    <kbd> = </kbd>                  --- Used to define keyboard input. Displayed in default monospace font.
+    <samp> = </samp>                --- Used to define sample output from a computer program. Displayed in default monospace font.
+    <code> = </code>                --- Used to define a piece of computer code. Displayed in default monospace font.
+    <var> = </var>                  --- Used to define a variable. Displayed in italic.
+
+
+
+
+Semantics can be used a website, but are not often used. I think.
+Semantic's:
+    <section> = </section>                  --- Defines a section in a document. A section is a thematic grouping of content, typically with a heading.
+    <article> = </article>                  --- Independent, self-contained content.
+    <header> = </header>                    --- Introductory conetnt.
+        A header usally contains: one or more <h1>. A logo or icon. Authorship information.
+    <footer> = </footer>                    --- Defines a footer.
+        A footer usally contains: Authorship information. Copyright information. Contact information. Sitemap. Back to top links. Related documents.
+        <nav> = </nav>                      --- Defines a set of navigation links.
+    <aside> = </aside>                      --- Content that is set aside from the main content. Like a complement to the main focus.
+    <figure> = </figure>                    --- Indicates a figure. Usally just an image.
+        <figcaption> = </figcaption>        --- Adds a caption to an image. Can be above or below content.
 
 
 Left off at:
-https://www.w3schools.com/html/html_filepaths.asp
+https://www.w3schools.com/html/html_forms.asp
+
+
+
+Semantic: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+Useful characters: https://www.w3schools.com/html/html_entities.asp
+Useful symbols: https://www.w3schools.com/html/html_symbols.asp

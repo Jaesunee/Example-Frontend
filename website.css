@@ -1,16 +1,9 @@
-h1 {
-    color:blue;
-    
-}
-
-#logo {
-    border-radius: 50%;
-    border: 5px solid #3067ab;
-    float: left;
-}
-
-nav{
-    float:right;
+body{
+    background-color: rgba(78, 78, 78, 0.5);
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .container{
@@ -20,10 +13,81 @@ nav{
 
 header{
     background: #42bcf5; 
+    height: 125px;
+    position: fixed;
+    width: 101%;
+    left: 0px;
+
 }
 
 header::after{
     content: ' ';
     display:table;
     clear: both;
+}
+
+header h1 {
+    color:blue;
+    display: inline-block;
+    margin-top:45px;
+    margin-left: 5px;
+}
+
+#logo {
+
+    border-radius: 50%;
+    border: 5px solid #3067ab;
+    float: left; 
+    margin-top: 10px;
+}
+
+nav{
+    float:right;
+    padding-right: 15%;
+    margin-top:45px;
+}
+
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+}
+
+nav a{
+    color: #3067ab;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.pictures{
+    padding-top:130px;
+}
+
+.pictures img{
+    padding: 10px;
+    border-radius: 15%;
+}
+
+.betweenpic{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: inline-block;
+}
+
+
+footer{
+    background-color: rgb(56, 56, 56);
+    padding: 15px;
+}
+
+footer p{
+    padding-left: 20px;
+    color: grey;
 }

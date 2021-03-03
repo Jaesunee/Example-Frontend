@@ -1,0 +1,6 @@
+Max width vs width:
+Max width will never go over the size of the image. Width will.
+
+
+https://www.w3schools.com/html/html_layout.asp
+and Responsive, which is after the above.
