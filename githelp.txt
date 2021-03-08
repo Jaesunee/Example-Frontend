@@ -1,3 +1,5 @@
+Made by Matthew Kachensky
+
 USE THESE IN ORDER TO EDIT IT CORRECTLY
 Use 'git clone 'URL'' To get the respository
 
